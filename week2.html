@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Remote sensing small presentation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yuanru Gao" />
+    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Remote sensing small presentation
+]
+.author[
+### Yuanru Gao
+]
+.date[
+### 2023/2/10 (updated: 2023-03-24)
+]
+
+---
+
+# Week2 Sentinel
+
+# Summary
+# Application
+# Reflection
+# Reference
+---
+# Summary
+- Sentine l
+- Sentine 2
+---
+# Sentinel 1
+
+.pull-left[
+  The Sentinels are the satellites of European Space Agency (ESA), designed to deliver a vast amount of data and imagery for Europe’s Copernicus program.The Sentinels are the satellites of European Space Agency (ESA), designed to deliver a vast amount of data and imagery for Europe’s Copernicus program.The Sentinel-1 Mission Guide contributes a detailed description of the satellite type itself, mission goals, Ground Segment. It also presents heritage missions, thematic areas, orbit characteristics and coverage along with instrument payload.
+]
+.pull-right[
+&lt;img src="sen1.jpeg" width="80%" style="display: block; margin: auto;" /&gt;
+]
+---
+
+# Sentinel 2
+
+.pull-left[
+ SENTINEL-2, launched as part of the European Commission’s Copernicus program on June 23, 2015, was designed specifically to deliver a wealth of data and imagery. The satellite is equipped with an opto-electronic multispectral sensor for surveying with a sentinel-2 resolution of 10 to 60 m in the visible, near infrared (VNIR), and short-wave infrared (SWIR) spectral zones, including 13 spectral channels, which ensures the capture of differences in vegetation state, including temporal changes, and also minimizes impact on the quality of atmospheric photography.
+]
+.pull-right[
+&lt;img src="sen2.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+# Application
+
+- 1 Sentinel-1 backscatter temporal variations are compared with optical-derived NDVI
+[[Source](https://www-sciencedirect-com.libproxy.ucl.ac.uk/science/article/pii/S0034425717303309)]
+- 2 Coastal coverage of ESA’ Sentinel 2 mission[(Bergsma and Almar, 2020)](https://www-sciencedirect-com.libproxy.ucl.ac.uk/science/article/pii/S027311772030140X)&lt;/br&gt;
+
+This paper discusses the ability of the Sentinel 2 constellation to cover coastal areas and measure coastal processes - both physical and biological. The study shows that Sentinel 2 is capable of **making high-frequency measurements on a global scale**. Cloud coverage at high latitudes is overcome by reduced revisit intervals. Around the equator only, the longest revisit intervals and high cloud probabilities limit coastal measurements there. The Sentinel 2-based method is able to **estimate digital elevation models for mid- and high-latitude coastal areas and sporadic points at low latitudes** where the 2 orbital strips overlap. This works also shows that Sentinel 2 enables coastal monitoring as never before, large spatial scale with revisits of a few days at most of the world.&lt;/br&gt;
+
+![Revisit intervals of the Sentinel 2 constellation over coastal areas](se.jpg)
+---
+# Reflection
+
+During the week, I gained a comprehensive understanding of remote sensing data, especially the Sentinel series. I learnt a lot about Sentinel satellites such as Sentinel-1， which provides all-weather, day and night radar imagery for land and ocean monitoring, emergency response and maritime security.Sentinel-2，which provides high-resolution optical images of the Earth's land surface that can be used to monitor changes in vegetation, land cover and water quality. Sentinel satellites can also provide information on atmospheric conditions, ocean Sentinel satellites can also provide timely and accurate data on environmental parameters such as atmospheric conditions, ocean parameters and land use, but the sensors on Sentinel satellites are designed to capture data in a specific wavelength range, which may limit their ability to capture information on certain environmental parameters.
+
+
+---
+# Reference
+
+Bergsma, E.W.J., Almar, R., 2020. Coastal coverage of ESA’ Sentinel 2 mission. Adv. Space Res. 65, 2636–2644. https://doi.org/10.1016/j.asr.2020.03.001
+
+
+
+---
+
+class: center, middle
+
+# Thanks!
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
