@@ -55,7 +55,7 @@ knitr::include_graphics('sen2.jpeg')
 ]
 
 ---
-# Application
+# Application 
 
 - 1 Sentinel-1 backscatter temporal variations are compared with optical-derived NDVI
 [[Source](https://www-sciencedirect-com.libproxy.ucl.ac.uk/science/article/pii/S0034425717303309)]
